@@ -9,8 +9,6 @@ import lombok.*;
 @Setter
 @Getter
 @Builder
-@AllArgsConstructor
-@NoArgsConstructor
 public class LoggerLevel {
     private String name;
     private String level;
