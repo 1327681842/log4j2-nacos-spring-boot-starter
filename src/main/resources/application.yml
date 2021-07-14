@@ -1,0 +1,17 @@
+# 配置中心
+nacos:
+  config:
+    bootstrap:
+      enable: true
+      log-enable: true
+    server-addr: 39.103.159.204:8848
+    data-id: dev
+    group: DEFAULT_GROUP
+    type: yaml
+    max-retry: 10
+    auto-refresh: true
+    config-retry-time: 1800
+    config-long-poll-timeout: 46000
+
+server:
+  port: 9090

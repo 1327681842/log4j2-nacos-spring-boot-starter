@@ -1,0 +1,22 @@
+10:25:50.304 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+10:25:50.313 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] dev+DEFAULT_GROUP
+10:25:50.315 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=1
+10:25:50.321 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 80986 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+10:25:50.322 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+10:25:50.946 [restartedMain] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"error"
+    }
+]
+10:25:50.947 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] test-log4j+DEFAULT_GROUP
+10:25:50.947 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=test-log4j, group=DEFAULT_GROUP, cnt=1
+10:25:51.192 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 1.812 seconds (JVM running for 2.864)
+10:25:51.201 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+10:25:51.203 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+10:25:51.204 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+10:25:51.204 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
