@@ -46,3 +46,35 @@
 20:03:34.026 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
 20:04:42.972 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
 20:04:42.972 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+20:12:17.782 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://39.103.159.204:8848， err : Read timed out
+20:12:17.812 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent - no available server, currentServerAddr : http://39.103.159.204:8848
+20:12:17.817 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://39.103.159.204:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:67) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:380) [nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:347) [nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:535) [nacos-client-1.4.2.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_291]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [?:1.8.0_291]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:1.8.0_291]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_291]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_291]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_291]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_291]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_291]
+20:12:17.877 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR com.alibaba.nacos.client.config.impl.ClientWorker - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://39.103.159.204:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:67) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:380) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:347) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:535) [nacos-client-1.4.2.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [?:1.8.0_291]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266) [?:1.8.0_291]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:1.8.0_291]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [?:1.8.0_291]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [?:1.8.0_291]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_291]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_291]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_291]
