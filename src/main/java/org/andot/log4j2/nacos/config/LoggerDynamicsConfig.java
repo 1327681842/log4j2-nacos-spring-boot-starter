@@ -9,12 +9,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.andot.log4j2.nacos.properties.Log4jNacosProperties;
 import org.andot.log4j2.nacos.properties.LoggerLevel;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.LoggerContext;
 import org.apache.logging.log4j.core.config.LoggerConfig;
 import org.slf4j.impl.StaticLoggerBinder;
-import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.CollectionUtils;
 
@@ -28,7 +29,7 @@ import java.util.concurrent.Executor;
  */
 @Slf4j
 @RequiredArgsConstructor
-@ConfigurationProperties("log4j2-nacos.config.server-addr")
+@ConditionalOnProperty("log4j2-nacos.config.server-addr")
 @Configuration
 public class LoggerDynamicsConfig {
 
@@ -48,6 +49,10 @@ public class LoggerDynamicsConfig {
 
                 @Override
                 public void receiveConfigInfo(String json) {
+                    if (StringUtils.isEmpty(json)) {
+                        log.info("接受内容为空！");
+                        return;
+                    }
                     log.info("==============log config info====================");
                     log.info(json);
                     log.info("=================================================");
@@ -61,9 +66,9 @@ public class LoggerDynamicsConfig {
                     org.apache.logging.log4j.core.config.Configuration config = ctx.getConfiguration();
                     for (LoggerLevel loggerLevel : loggerLevelList) {
                         LoggerConfig loggerConfig = config.getLoggerConfig(loggerLevel.getName());
-                        loggerConfig.setLevel(Level.getLevel(loggerLevel.getLevel()));
+                        loggerConfig.setLevel(Level.valueOf(loggerLevel.getLevel()));
                     }
-                    ctx.updateLoggers();
+                    ctx.updateLoggers(config);
                     log.debug("当前可以打印日志的等级为：debug");
                     log.info("当前可以打印日志的等级为：info");
                     log.error("当前可以打印日志的等级为：error");

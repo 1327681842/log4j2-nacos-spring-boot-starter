@@ -1,7 +1,6 @@
 package org.andot.log4j2.nacos.properties;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * 日志等级对象
@@ -9,6 +8,9 @@ import lombok.Setter;
  */
 @Setter
 @Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class LoggerLevel {
     private String name;
     private String level;

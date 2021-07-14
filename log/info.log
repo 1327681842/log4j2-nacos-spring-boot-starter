@@ -166,3 +166,427 @@
 10:25:51.203 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
 10:25:51.204 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
 10:25:51.204 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+19:35:38.872 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+19:35:38.880 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] dev+DEFAULT_GROUP
+19:35:38.881 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=1
+19:35:38.886 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 90420 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+19:35:38.887 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+19:35:40.334 [restartedMain] ERROR com.alibaba.nacos.client.config.http.ServerHttpAgent - [NACOS SocketTimeoutException httpGet] currentServerAddr:http://39.103.159.204:8848， err : connect timed out
+19:35:40.362 [restartedMain] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"error"
+    }
+]
+19:35:40.363 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] test-log4j+DEFAULT_GROUP
+19:35:40.363 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=test-log4j, group=DEFAULT_GROUP, cnt=1
+19:35:40.607 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 2.556 seconds (JVM running for 3.991)
+19:35:40.615 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+19:35:40.616 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+19:35:40.618 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+19:35:40.619 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+19:38:28.250 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+19:38:28.258 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] dev+DEFAULT_GROUP
+19:38:28.259 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=1
+19:38:28.263 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 90509 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+19:38:28.264 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+19:38:28.743 [restartedMain] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"error"
+    }
+]
+19:38:28.746 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] test-log4j+DEFAULT_GROUP
+19:38:28.746 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=test-log4j, group=DEFAULT_GROUP, cnt=1
+19:38:28.975 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 1.599 seconds (JVM running for 2.57)
+19:38:28.983 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+19:38:28.984 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+19:38:28.985 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+19:38:28.985 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+19:39:53.115 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+19:39:53.129 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] dev+DEFAULT_GROUP
+19:39:53.130 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=1
+19:39:53.133 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 90554 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+19:39:53.137 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+19:39:54.184 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+19:39:54.185 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:39:54.185 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+19:39:54.264 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:39:54.538 [restartedMain] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"error"
+    }
+]
+19:39:54.540 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] test-log4j+DEFAULT_GROUP
+19:39:54.540 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=test-log4j, group=DEFAULT_GROUP, cnt=1
+19:39:55.182 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+19:39:55.252 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 3.012 seconds (JVM running for 4.223)
+19:40:30.989 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:40:30.990 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:40:31.167 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a1d5c00bdbe2a3102c8951d2f3e7aad3, content=[
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+    ..., type=json
+19:40:31.169 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:40:31.169 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"debug"
+    }
+]
+19:40:31.169 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:40:31.259 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:40:31.260 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:40:31.260 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:40:58.888 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:40:58.889 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"error"
+    }
+]
+19:40:58.889 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:41:27.586 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:41:27.587 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:41:27.587 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:41:44.491 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+19:41:44.495 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=2
+19:41:44.495 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 90554 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+19:41:44.496 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+19:41:44.758 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+19:41:44.758 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:41:44.758 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+19:41:44.773 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:41:44.917 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+19:41:44.928 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 0.635 seconds (JVM running for 113.897)
+19:41:53.314 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:41:53.315 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:41:53.335 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a1d5c00bdbe2a3102c8951d2f3e7aad3, content=[
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+    ..., type=json
+19:41:53.336 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:41:53.336 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot",
+        "level":"debug"
+    }
+]
+19:41:53.337 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:41:56.485 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:41:56.487 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:41:56.487 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:42:19.452 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:42:19.454 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"error"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"debug"
+    }
+]
+19:42:19.454 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:42:19.456 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:42:43.569 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:42:54.079 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:43:02.187 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:44:27.173 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:44:29.286 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+19:44:29.289 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=3
+19:44:29.289 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 90554 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+19:44:29.290 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+19:44:29.506 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+19:44:29.507 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:44:29.507 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+19:44:29.522 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:44:29.708 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+19:44:29.719 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 0.533 seconds (JVM running for 278.686)
+19:44:43.255 [Thread-46] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+19:44:43.256 [Thread-46] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+19:44:43.516 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+19:44:43.521 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=4
+19:44:43.521 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 90554 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+19:44:43.522 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+19:44:43.811 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+19:44:43.811 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+19:44:43.811 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+19:44:43.821 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:44:43.857 [restartedMain] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"error"
+    }
+]
+19:44:43.866 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] test-log4j+DEFAULT_GROUP
+19:44:43.866 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=test-log4j, group=DEFAULT_GROUP, cnt=1
+19:44:43.980 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+19:44:43.991 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 0.604 seconds (JVM running for 292.958)
+19:44:51.661 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:44:51.661 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:44:51.661 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:44:51.661 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:44:51.677 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a3a0e3f39eb8c598cf939411846cfdb3, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:44:51.677 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a3a0e3f39eb8c598cf939411846cfdb3, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:44:51.677 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:44:51.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:44:51.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"debug"
+    }
+]
+19:44:51.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"debug"
+    }
+]
+19:44:51.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:44:51.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:44:54.223 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:44:54.223 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:44:54.224 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:44:54.225 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:44:54.225 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=2548ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:44:54.662 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:44:54.662 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:44:54.662 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:44:54.663 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:44:54.663 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=2986ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:45:06.676 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:45:06.677 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:45:06.677 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:45:06.677 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:45:06.693 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=b661363479589bca0866587b0a353fd5, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:45:06.693 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=b661363479589bca0866587b0a353fd5, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:45:06.693 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:45:06.693 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:45:06.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"error"
+    }
+]
+19:45:06.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"error"
+    }
+]
+19:45:06.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:45:06.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:45:06.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:45:06.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:45:06.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:45:06.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:45:06.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=2ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:45:06.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=2ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:46:47.578 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:46:47.578 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:46:47.579 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:46:47.579 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:46:47.595 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a3a0e3f39eb8c598cf939411846cfdb3, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:46:47.597 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:46:47.597 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:46:47.597 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:46:47.597 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:46:47.598 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=2ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:46:47.801 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a3a0e3f39eb8c598cf939411846cfdb3, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:46:47.801 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:46:47.802 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"debug"
+    }
+]
+19:46:47.802 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:46:47.803 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+19:46:47.803 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:46:47.803 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+19:46:47.803 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:46:47.804 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=3ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:47:04.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:47:04.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+19:47:04.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:47:04.678 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+19:47:04.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=b661363479589bca0866587b0a353fd5, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:47:04.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+19:47:04.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"error"
+    }
+]
+19:47:04.694 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+19:47:04.695 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=b661363479589bca0866587b0a353fd5, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+19:47:04.696 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:47:04.696 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:47:04.696 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+19:47:04.697 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=3ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@774afb36 
+19:47:04.697 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+19:47:04.697 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=1ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=b661363479589bca0866587b0a353fd5, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@789cb350 
+20:03:34.021 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+20:03:34.026 [Thread-5] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+20:03:34.130 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+20:03:34.130 [SpringContextShutdownHook] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+20:03:41.061 [restartedMain] INFO  com.alibaba.boot.nacos.config.util.NacosConfigPropertiesUtils - nacosConfigProperties : NacosConfigProperties{serverAddr='39.103.159.204:8848', contextPath='null', encode='null', endpoint='null', namespace='null', accessKey='null', secretKey='null', ramRoleName='null', autoRefresh=true, dataId='dev', dataIds='null', group='DEFAULT_GROUP', type=YAML, maxRetry='10', configLongPollTimeout='46000', configRetryTime='1800', enableRemoteSyncConfig=false, extConfig=[], bootstrap=Bootstrap{enable=true, logEnable=true}}
+20:03:41.128 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] dev+DEFAULT_GROUP
+20:03:41.131 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=dev, group=DEFAULT_GROUP, cnt=1
+20:03:41.145 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Starting Log4j2NacosSpringBootStarterApplication on MacBook-Pro.local with PID 91079 (/Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter/target/classes started by lucas in /Users/lucas/tal/IDEAProject/log4j2-nacos-spring-boot-starter)
+20:03:41.173 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - No active profile set, falling back to default profiles: default
+20:03:43.416 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+20:03:43.417 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:03:43.417 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+20:03:43.470 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:03:43.619 [restartedMain] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"error"
+    }
+]
+20:03:43.620 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [subscribe] test-log4j+DEFAULT_GROUP
+20:03:43.621 [restartedMain] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [add-listener] ok, tenant=, dataId=test-log4j, group=DEFAULT_GROUP, cnt=1
+20:03:44.465 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+20:03:44.552 [restartedMain] INFO  org.andot.log4j2.nacos.Log4j2NacosSpringBootStarterApplication - Started Log4j2NacosSpringBootStarterApplication in 5.092 seconds (JVM running for 6.327)
+20:04:42.852 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [polling-resp] config changed. dataId=test-log4j, group=DEFAULT_GROUP
+20:04:42.853 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - get changedGroupKeys:[test-log4j+DEFAULT_GROUP]
+20:04:42.869 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.ClientWorker - [fixed-39.103.159.204_8848] [data-received] dataId=test-log4j, group=DEFAULT_GROUP, tenant=null, md5=a3a0e3f39eb8c598cf939411846cfdb3, content=[
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2...., type=json
+20:04:42.872 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - ==============log config info====================
+20:04:42.872 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - [
+    {
+        "name":"ROOT",
+        "level":"info"
+    },
+    {
+        "name":"org.andot.log4j2.nacos",
+        "level":"debug"
+    }
+]
+20:04:42.872 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - =================================================
+20:04:42.971 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：info
+20:04:42.972 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] ERROR org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：error
+20:04:42.972 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] WARN  org.andot.log4j2.nacos.config.LoggerDynamicsConfig - 当前可以打印日志的等级为：warn
+20:04:42.972 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-ok] dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@71b9a65d 
+20:04:42.972 [com.alibaba.nacos.client.Worker.longPolling.fixed-39.103.159.204_8848] INFO  com.alibaba.nacos.client.config.impl.CacheData - [fixed-39.103.159.204_8848] [notify-listener] time cost=101ms in ClientWorker, dataId=test-log4j, group=DEFAULT_GROUP, md5=a3a0e3f39eb8c598cf939411846cfdb3, listener=org.andot.log4j2.nacos.config.LoggerDynamicsConfig$1@71b9a65d 
+20:05:08.327 [http-nio-9090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
