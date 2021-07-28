@@ -7,7 +7,7 @@
     <artifactId>log4j2-nacos-spring-boot-starter</artifactId>
     <version>1.0.0</version>
     <name>log4j2-nacos-spring-boot-starter</name>
-    <description>Demo project for Spring Boot</description>
+    <description>log4j2-nacos-spring-boot-starter project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
