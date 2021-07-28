@@ -13,5 +13,12 @@ nacos:
     config-retry-time: 1800
     config-long-poll-timeout: 46000
 
+log4j2-nacos:
+  config:
+    server-addr: 39.103.159.204:8848
+    data-id: test-log4j
+    group: DEFAULT_GROUP
+
+
 server:
   port: 9090

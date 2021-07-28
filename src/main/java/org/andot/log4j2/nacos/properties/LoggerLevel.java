@@ -2,6 +2,8 @@ package org.andot.log4j2.nacos.properties;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
  * 日志等级对象
  * @author lucas
@@ -9,7 +11,10 @@ import lombok.*;
 @Setter
 @Getter
 @Builder
-public class LoggerLevel {
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class LoggerLevel implements Serializable {
     private String name;
     private String level;
 }

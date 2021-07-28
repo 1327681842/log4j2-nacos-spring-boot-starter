@@ -1,5 +1,6 @@
 package org.andot.log4j2.nacos.endpoint;
 
+import lombok.extern.slf4j.Slf4j;
 import org.andot.log4j2.nacos.properties.LoggerLevel;
 import org.apache.commons.collections.MapUtils;
 import org.apache.logging.log4j.LogManager;
@@ -21,6 +22,7 @@ import java.util.stream.Collectors;
  * 如果没有配置nacos 址
  * @author lucas
  */
+@Slf4j
 @ConditionalOnProperty("log4j2-nacos.config.server-addr")
 @RestController
 @RequestMapping("/logger")
@@ -37,6 +39,11 @@ public class LoggerObjectEndpoint {
         if (MapUtils.isEmpty(loggerConfigMap)) {
             return Collections.emptyList();
         }
+        log.debug("当前可以打印日志的等级为：debug");
+        log.info("当前可以打印日志的等级为：info");
+        log.error("当前可以打印日志的等级为：error");
+        log.trace("当前可以打印日志的等级为：trace");
+        log.warn("当前可以打印日志的等级为：warn");
         return loggerConfigMap.values().stream().map(item->
                 LoggerLevel.builder().name(item.getName()).level(item.getLevel().name()).build())
                 .collect(Collectors.toList());

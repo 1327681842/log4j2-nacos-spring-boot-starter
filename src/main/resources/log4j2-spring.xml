@@ -85,9 +85,6 @@
         <Logger name="org.springframework" level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
-        <Logger name="org.andot.log4j2.nacos" level="info" additivity="true">
-            <AppenderRef ref="Console"/>
-        </Logger>
 
         <root level="info">
             <appender-ref ref="Console"/>
