@@ -3,3 +3,6 @@
 参考：[log4j 动态化配置](https://logging.apache.org/log4j/2.x/manual/customconfig.html#ConfigurationBuilder) 
 
 此插件实现了利用Nacos实现Log4j2实现log配置文件动态加载
+
+## 在Nacos 增加需要动态刷新的Log4J2配置
+![](https://raw.githubusercontent.com/share-framework/sharer-pic/master/20210917111758.png)
