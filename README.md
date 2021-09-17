@@ -6,3 +6,19 @@
 
 ## 在Nacos 增加需要动态刷新的Log4J2配置
 ![](https://raw.githubusercontent.com/share-framework/sharer-pic/master/20210917111758.png)
+
+## 具体使用
+```json
+[
+  {
+    "name":"ROOT",
+    "level":"info"
+  },
+  {
+    "name":"org.andot.log4j2.nacos",
+    "level":"debug"
+  }
+]
+```
+
+> 这个示例是用来修改 打印日志等级，在项目启动中，如果修改 org.andot.log4j2.nacos 包的 level 为 error， 那这个org.andot.log4j2.nacos 包下面的log.debug("hello")； 就不会打印hello
